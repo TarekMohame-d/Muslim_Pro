@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Muslim Pro</string>
+    <string name="home_screen_appbar_title">القائمة الرئيسية</string>
+    <string name="about_content">لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة</string>
+</resources>
