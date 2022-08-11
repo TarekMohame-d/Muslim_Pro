@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MuslimPro">
         <activity
+            android:name=".Quran"
+            android:exported="false" />
+        <activity
+            android:name=".Azkar"
+            android:exported="false" />
+        <activity
+            android:name=".Ahadeth"
+            android:exported="false" />
+        <activity
             android:name=".About"
             android:exported="false" />
         <activity

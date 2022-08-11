@@ -3,12 +3,17 @@ package com.example.muslimpro;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 
@@ -24,6 +29,30 @@ public class MainActivity extends AppCompatActivity {
         setTitle("");
         toolbar.setLogo(R.drawable.home_icon);
         setSupportActionBar(toolbar);
+        CardView cardView1 = (CardView) findViewById(R.id.card_view1);
+        CardView cardView2 = (CardView) findViewById(R.id.card_view2);
+        CardView cardView3 = (CardView) findViewById(R.id.card_view3);
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Ahadeth.class);
+                startActivity(intent);
+            }
+        });
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Azkar.class);
+                startActivity(intent);
+            }
+        });
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Quran.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
