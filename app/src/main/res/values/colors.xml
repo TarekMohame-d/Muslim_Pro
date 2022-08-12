@@ -7,6 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="deepOrange">#FFee7600</color>
-    <color name="ligthorange">#FAC213</color>
+    <color name="deepOrange">#ee7600</color>
+    <color name="orange">#F28500</color>
+    <color name="ligth_orange">#ffa500</color>
+    <color name="brown_white">#FCFFE7</color>
+    <color name="splash_screen_app_name">#ffFFA426</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="brown">#ffB46E5A</color>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ligthorange"
+    android:background="@color/brown_white"
     android:orientation="vertical">
 
     <include
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/picture1"
-            android:fontFamily="@font/alfont_com_arefruqaa_regular"
+            android:fontFamily="@font/al_quranalkareem"
             android:gravity="center"
             android:text="أحاديث"
             android:textSize="48sp"
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/picture1"
-            android:fontFamily="@font/alfont_com_arefruqaa_regular"
+            android:fontFamily="@font/al_quranalkareem"
             android:gravity="center"
             android:text="أذكار الصباح"
             android:textSize="40sp"
@@ -77,7 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/picture1"
-            android:fontFamily="@font/alfont_com_arefruqaa_regular"
+            android:fontFamily="@font/al_quranalkareem"
             android:gravity="center"
             android:text="القرآن"
             android:textSize="48sp"

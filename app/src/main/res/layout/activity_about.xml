@@ -18,6 +18,7 @@
         android:layout_width="273dp"
         android:layout_height="419dp"
         android:layout_marginTop="96dp"
+        android:fontFamily="@font/al_quranalkareem"
         android:text="@string/about_content"
         android:textAlignment="viewStart"
         android:textSize="24sp"
