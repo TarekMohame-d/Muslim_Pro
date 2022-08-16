@@ -13,13 +13,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 // Home Screen
 public class MainActivity extends AppCompatActivity {
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(getApplicationContext(), "Goodbye", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         TextView title = (TextView) findViewById(R.id.custom_title);
@@ -37,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                         finish();
                     }
                 })
-                .setNegativeButton("No",null)
+                .setNegativeButton("No", null)
                 .show();
     }
 }

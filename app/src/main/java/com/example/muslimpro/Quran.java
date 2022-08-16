@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+
 public class Quran extends AppCompatActivity {
 
     @Override
@@ -15,7 +16,7 @@ public class Quran extends AppCompatActivity {
         setContentView(R.layout.activity_quran);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        TextView title = (TextView)findViewById(R.id.custom_title);
+        TextView title = (TextView) findViewById(R.id.custom_title);
         title.setText("القرآن");
         setTitle("");
         setSupportActionBar(toolbar);
