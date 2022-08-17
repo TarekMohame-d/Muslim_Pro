@@ -43,6 +43,7 @@
             android:layout_marginEnd="16dp"
             android:gravity="center"
             android:text="سنسرتسيرنتسرنسرتسرسنرسر"
+            android:singleLine="true"
             android:textAlignment="viewEnd"
             android:textSize="14sp"
             tools:ignore="RtlCompat" />

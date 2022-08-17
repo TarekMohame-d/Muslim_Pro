@@ -15,6 +15,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.muslimpro.Ahadeth.Ahadeth;
+
 
 // Home Screen
 public class MainActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.example.muslimpro;
+package com.example.muslimpro.Ahadeth;
 
 public class HadethModel {
     private String hadethTitle;
