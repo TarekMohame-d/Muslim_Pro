@@ -83,8 +83,8 @@ public class Ahadeth extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(Ahadeth.this, HadethContent.class);
-                intent.putExtra("hadeth",hadeth[i]);
-                intent.putExtra("sharhHadeth",sharhHadeth[i]);
+                intent.putExtra("hadeth", hadeth[i]);
+                intent.putExtra("sharhHadeth", sharhHadeth[i]);
                 startActivity(intent);
             }
         });
