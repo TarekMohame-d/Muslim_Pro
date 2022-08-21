@@ -14,4 +14,5 @@
     <color name="splash_screen_app_name">#ffFFA426</color>
     <color name="grey">#BDBDBD</color>
     <color name="brown">#ffB46E5A</color>
+    <color name="green">#00D100</color>
 </resources>

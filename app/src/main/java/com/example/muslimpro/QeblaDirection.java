@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -55,13 +56,22 @@ public class QeblaDirection extends AppCompatActivity implements SensorEventList
     @Override
     public void onSensorChanged(SensorEvent event) {
         int degree = Math.round(event.values[0]);
-        RotateAnimation animation = new RotateAnimation(currentDegree, degree, Animation.RELATIVE_TO_SELF, 0.5f
+        RotateAnimation animation = new RotateAnimation(currentDegree, -degree, Animation.RELATIVE_TO_SELF, 0.5f
                 , Animation.RELATIVE_TO_SELF, 0.5f);
         animation.setDuration(500);
         animation.setFillAfter(true);
         emplaaCompass.startAnimation(animation);
-        currentDegree = degree;
-        textDegree.setText("Degree: "+currentDegree);
+        currentDegree = -degree;
+        float txtDegree = Math.abs(currentDegree);
+        if(txtDegree >= 131.0 && txtDegree <= 142.0)
+        {
+            textDegree.setTextColor(Color.parseColor("#00D100"));
+        }
+        else
+        {
+            textDegree.setTextColor(Color.parseColor("#FF0000"));
+        }
+        textDegree.setText("Degree: "+txtDegree);
     }
 
     @Override
