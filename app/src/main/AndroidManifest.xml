@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MuslimPro">
         <activity
+            android:name=".QeblaDirection"
+            android:exported="false" />
+        <activity
+            android:name=".QeblaDirection"
+            android:exported="false" />
+        <activity
             android:name=".Ahadeth.HadethContent"
             android:exported="false" />
         <activity

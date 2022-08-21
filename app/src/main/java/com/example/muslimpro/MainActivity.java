@@ -66,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
         cardView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // go to ebla activity
+                Intent intent = new Intent(MainActivity.this, QeblaDirection.class);
+                startActivity(intent);
             }
         });
     }
