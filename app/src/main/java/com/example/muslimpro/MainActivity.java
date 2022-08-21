@@ -8,22 +8,28 @@ import androidx.cardview.widget.CardView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.muslimpro.Ahadeth.Ahadeth;
 
 
 // Home Screen
 public class MainActivity extends AppCompatActivity {
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(getApplicationContext(), "Goodbye", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         TextView title = (TextView) findViewById(R.id.custom_title);
@@ -34,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         CardView cardView1 = (CardView) findViewById(R.id.card_view1);
         CardView cardView2 = (CardView) findViewById(R.id.card_view2);
         CardView cardView3 = (CardView) findViewById(R.id.card_view3);
+        CardView cardView4 = (CardView) findViewById(R.id.card_view4);
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,18 +48,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Azkar.class);
+                Intent intent = new Intent(MainActivity.this, Quran.class);
                 startActivity(intent);
             }
         });
         cardView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Quran.class);
+                Intent intent = new Intent(MainActivity.this, Azkar.class);
                 startActivity(intent);
+            }
+        });
+        cardView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // go to ebla activity
             }
         });
     }
@@ -87,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         finish();
                     }
                 })
-                .setNegativeButton("No",null)
+                .setNegativeButton("No", null)
                 .show();
     }
 }

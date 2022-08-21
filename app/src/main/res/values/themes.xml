@@ -13,6 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/deepOrange</item>
         <!-- Customize your theme here. -->
         <item name="android:layoutDirection">rtl</item>
+        <item name="android:colorEdgeEffect">@color/ligth_orange</item>
     </style>
 
     <style name="homeScreenTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -29,11 +30,24 @@
         <!-- Customize your theme here. -->
         <item name="android:layoutDirection">rtl</item>
     </style>
+
+    <style name="splash_screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/splash_screen_app_name</item>
+        <!-- Customize your theme here. -->
+        <item name="android:layoutDirection">rtl</item>
+    </style>
+
     <style name="TitleBarTextAppearance" parent="android:TextAppearance">
         <item name="android:fontFamily">@font/alfont_com_arefruqaa_regular</item>
         <item name="android:textSize">23sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="hadeth_item" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:layoutDirection">ltr</item>
     </style>
 
 </resources>

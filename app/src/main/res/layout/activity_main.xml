@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ligthorange"
+    android:background="@color/ligth_orange"
     android:orientation="vertical">
 
     <include
@@ -15,74 +16,150 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view1"
-        android:layout_width="200dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="60dp"
-        app:cardCornerRadius="12dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include">
 
-        <TextView
-            android:id="@+id/text1"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/picture1"
-            android:fontFamily="@font/alfont_com_arefruqaa_regular"
-            android:gravity="center"
-            android:text="أحاديث"
-            android:textSize="48sp"
-            android:textStyle="bold" />
-    </androidx.cardview.widget.CardView>
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view2"
-        android:layout_width="200dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="24dp"
-        app:cardCornerRadius="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_view1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="left"
+                android:layoutDirection="ltr"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ahadeth_icon" />
 
-        <TextView
-            android:id="@+id/text2"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:text="أحاديث"
+                android:textAlignment="viewStart"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/picture1"
-            android:fontFamily="@font/alfont_com_arefruqaa_regular"
-            android:gravity="center"
-            android:text="أذكار الصباح"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-    </androidx.cardview.widget.CardView>
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view1">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_view3"
-        android:layout_width="200dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="60dp"
-        app:cardCornerRadius="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_view2"
-        app:layout_constraintVertical_bias="0.10">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="left"
+                android:layoutDirection="ltr"
+                android:paddingLeft="10dp"
+                android:src="@drawable/quran_icon" />
 
-        <TextView
-            android:id="@+id/text3"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:text="القرآن"
+                android:textAlignment="viewStart"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/picture1"
-            android:fontFamily="@font/alfont_com_arefruqaa_regular"
-            android:gravity="center"
-            android:text="القرآن"
-            android:textSize="48sp"
-            android:textStyle="bold" />
-    </androidx.cardview.widget.CardView>
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view2">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="left"
+                android:layoutDirection="ltr"
+                android:paddingLeft="10dp"
+                android:src="@drawable/azkar_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:text="أذكار"
+                android:textAlignment="viewStart"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_view3">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="left"
+                android:layoutDirection="ltr"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ebla_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:text="اتجاه القِبلة"
+                android:textAlignment="viewStart"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
