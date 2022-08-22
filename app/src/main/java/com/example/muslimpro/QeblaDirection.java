@@ -56,6 +56,7 @@ public class QeblaDirection extends AppCompatActivity implements SensorEventList
     @Override
     public void onSensorChanged(SensorEvent event) {
         int degree = Math.round(event.values[0]);
+        String direction = "";
         RotateAnimation animation = new RotateAnimation(currentDegree, -degree, Animation.RELATIVE_TO_SELF, 0.5f
                 , Animation.RELATIVE_TO_SELF, 0.5f);
         animation.setDuration(500);
@@ -63,15 +64,29 @@ public class QeblaDirection extends AppCompatActivity implements SensorEventList
         emplaaCompass.startAnimation(animation);
         currentDegree = -degree;
         float txtDegree = Math.abs(currentDegree);
-        if(txtDegree >= 131.0 && txtDegree <= 142.0)
-        {
-            textDegree.setTextColor(Color.parseColor("#00D100"));
+        if (txtDegree >= 160 && txtDegree <= 200) {
+            direction = "S";
+        } else if (txtDegree >= 0 && txtDegree <= 20 || txtDegree >= 340 && txtDegree <= 360) {
+            direction = "N";
+        } else if (txtDegree >= 68 && txtDegree <= 112) {
+            direction = "E";
+        } else if (txtDegree >= 250 && txtDegree <= 291) {
+            direction = "W";
+        } else if (txtDegree >= 113 && txtDegree <= 157) {
+            direction = "SE";
+        } else if (txtDegree >= 202 && txtDegree <= 248) {
+            direction = "SW";
+        } else if (txtDegree >= 293 && txtDegree <= 338) {
+            direction = "NW";
+        } else if (txtDegree >= 22 && txtDegree <= 67) {
+            direction = "NE";
         }
-        else
-        {
+        if (txtDegree >= 131.0 && txtDegree <= 142.0) {
+            textDegree.setTextColor(Color.parseColor("#00D100"));
+        } else {
             textDegree.setTextColor(Color.parseColor("#FF0000"));
         }
-        textDegree.setText("Degree: "+txtDegree);
+        textDegree.setText("Degree: " + txtDegree + "° " + direction);
     }
 
     @Override
