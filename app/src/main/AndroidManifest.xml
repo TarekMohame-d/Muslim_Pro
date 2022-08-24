@@ -11,7 +11,18 @@
         android:roundIcon="@mipmap/app_icon_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.MuslimPro">
-
+        <activity
+            android:name=".quranadetails"
+            android:exported="false" />
+        <activity
+            android:name=".quraan"
+            android:exported="false" />
+        <activity
+            android:name=".Add"
+            android:exported="false" />
+        <activity
+            android:name=".QeblaDirection"
+            android:exported="false" />
         <activity
             android:name=".QeblaDirection"
             android:exported="false" />

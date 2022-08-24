@@ -3,6 +3,10 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven {
+            url ("https://jcenter.bintray.com")
+        }
+
     }
 }
 dependencyResolutionManagement {
@@ -10,7 +14,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal()
+        maven {
+            url ("https://jcenter.bintray.com")
+        }
+
     }
 }
 rootProject.name = "Muslim Pro"
