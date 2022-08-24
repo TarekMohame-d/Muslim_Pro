@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.muslimpro.Ahadeth.Ahadeth;
+import com.example.muslimpro.Azkar.Azkar;
 
 
 // Home Screen
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Quran.class);
+                Intent intent = new Intent(MainActivity.this, quraan.class);
                 startActivity(intent);
             }
         });

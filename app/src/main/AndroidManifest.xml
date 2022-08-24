@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MuslimPro">
         <activity
+            android:name=".quranadetails"
+            android:exported="false" />
+        <activity
+            android:name=".quraan"
+            android:exported="false" />
+        <activity
+            android:name=".Add"
+            android:exported="false" />
+        <activity
             android:name=".QeblaDirection"
             android:exported="false" />
         <activity
@@ -24,7 +33,7 @@
             android:name=".Quran"
             android:exported="false" />
         <activity
-            android:name=".Azkar"
+            android:name=".Azkar.Azkar"
             android:exported="false" />
         <activity
             android:name=".Ahadeth.Ahadeth"
