@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.github.barteksc.pdfviewer.PDFView;
+
 
 public class Quran extends AppCompatActivity {
 
@@ -27,5 +29,8 @@ public class Quran extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+        PDFView pdfView = findViewById(R.id.pdfView);
+        pdfView.fromAsset("quran_kareem.pdf").load();
     }
 }

@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.muslimpro.Ahadeth.Ahadeth;
+import com.example.muslimpro.Azkar.Azkar;
 
 
 // Home Screen

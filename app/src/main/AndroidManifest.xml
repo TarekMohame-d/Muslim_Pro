@@ -11,9 +11,7 @@
         android:roundIcon="@mipmap/app_icon_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.MuslimPro">
-        <activity
-            android:name=".QeblaDirection"
-            android:exported="false" />
+
         <activity
             android:name=".QeblaDirection"
             android:exported="false" />
@@ -24,7 +22,7 @@
             android:name=".Quran"
             android:exported="false" />
         <activity
-            android:name=".Azkar"
+            android:name=".Azkar.Azkar"
             android:exported="false" />
         <activity
             android:name=".Ahadeth.Ahadeth"

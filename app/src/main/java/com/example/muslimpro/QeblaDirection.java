@@ -66,17 +66,17 @@ public class QeblaDirection extends AppCompatActivity implements SensorEventList
         float txtDegree = Math.abs(currentDegree);
         if (txtDegree >= 160 && txtDegree <= 200) {
             direction = "S";
-        } else if (txtDegree >= 0 && txtDegree <= 20 || txtDegree >= 340 && txtDegree <= 360) {
+        } else if (txtDegree >= 0 && txtDegree <= 21 || txtDegree >= 339 && txtDegree <= 360) {
             direction = "N";
         } else if (txtDegree >= 68 && txtDegree <= 112) {
             direction = "E";
-        } else if (txtDegree >= 250 && txtDegree <= 291) {
+        } else if (txtDegree >= 249 && txtDegree <= 291) {
             direction = "W";
-        } else if (txtDegree >= 113 && txtDegree <= 157) {
+        } else if (txtDegree >= 113 && txtDegree <= 159) {
             direction = "SE";
-        } else if (txtDegree >= 202 && txtDegree <= 248) {
+        } else if (txtDegree >= 201 && txtDegree <= 248) {
             direction = "SW";
-        } else if (txtDegree >= 293 && txtDegree <= 338) {
+        } else if (txtDegree >= 292 && txtDegree <= 338) {
             direction = "NW";
         } else if (txtDegree >= 22 && txtDegree <= 67) {
             direction = "NE";
